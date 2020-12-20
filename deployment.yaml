@@ -8,9 +8,9 @@ spec:
   template:
     spec:
       containers:
-      - name: reverse-words
-        image: quay.io/mavazque/tekton-reversewords:970cd84d9550435932da7c3d08ecda43143a51f5
-        env:
-        - name: RELEASE
-          value: "Production release"
-        - $patch: replace
+        - name: reverse-words
+          image: quay.io/tomasmota/tekton-reversewords:970cd84d9550435932da7c3d08ecda43143a51f5
+          env:
+            - name: RELEASE
+              value: "Production release"
+            - $patch: replace
